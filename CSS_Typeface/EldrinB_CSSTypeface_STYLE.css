@@ -7,7 +7,7 @@ body{
 	width:200px;
 	height:150px; /*resize as you see fit */
 	display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
-	border:1px solid white; /*feel free to remove or hide this rule */
+	/*border:1px solid white; /*feel free to remove or hide this rule */
 	position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
 
 }
