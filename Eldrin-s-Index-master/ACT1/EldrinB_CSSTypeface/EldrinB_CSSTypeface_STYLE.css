@@ -1,0 +1,614 @@
+body{
+	background-color: black !important; 
+	
+}
+.letter {
+	padding:20px;
+	width:200px;
+	height:150px; /*resize as you see fit */
+	display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+	border:1px solid black;*/ /*feel free to remove or hide this rule */
+	position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+
+}
+.stem{
+	position:absolute;
+	width: 10px;
+	height: 150px;
+	background: white;
+}
+.degree45-short{
+	position:absolute;
+	width:15px;
+	height:38px;
+	background: white;
+}
+.degree45-long{
+	position:absolute;
+	width:15px;
+	height:75px;
+	background: white;
+}
+.degree45-xlong{
+	position:absolute;
+	width:15px;
+	height:150px;
+	background: white;
+}
+.across {
+	position: absolute;
+	width:80px;
+	height:10px;
+	background: white;
+}
+.acrossNum {
+	position: absolute;
+	width:140px;
+	height:10px;
+	background: white;
+}
+
+/*LETTER A*/
+.letter.letter-a{
+	width:165px !important;
+}
+#letter-a.stem {
+	transform: translate(155px,0px);
+}
+#letter-a.degree45-xlong {
+	transform: skew(-45deg) translate(-80px,0px);
+}
+#letter-a.across {
+	transform: translate(-80px,75px);
+}
+
+/*LETTER B*/
+.letter.letter-b{
+	width:55px !important;
+}
+#letter-b.stem{
+	transform:translate(0px,0px);
+}
+#letter-b.degree45-short.one{
+	transform:skew(45deg) translate(20px,0px);
+}
+#letter-b.degree45-short.two{
+	transform:skew(-45deg) translate(58px,38px);
+}
+#letter-b.degree45-short.three{
+	transform:skew(45deg) translate(-55px,75px);
+}
+#letter-b.degree45-short.four{
+	transform:skew(-45deg) translate(132px,112px);
+}
+
+/*LETTER C*/
+.letter.letter-c{
+	width:90px !important;
+}
+#letterC{
+	transform: translate(-37px,0px);
+}
+#letter-c.degree45-long.one{
+	transform: skew(-45deg) translate(75px,0px);
+}
+#letter-c.degree45-long.two{
+	transform: skew(45deg) translate(0px,75px);
+}
+
+/*LETTER D*/
+.letter.letter-d{
+	width:93px !important;
+}
+#letter-d.stem{
+	transform:translate(0px,0px);
+}
+#letter-d.degree45-long.one{
+	transform: skew(-45deg) translate(115px,75px);
+}
+#letter-d.degree45-long.two{
+	transform: skew(45deg) translate(40px,0px);
+}
+
+/*LETTER E*/
+.letter.letter-e{
+	width:90px !important;
+}
+#letter-e.across.one{
+	transform:translate(10px,0px);
+}
+#letter-e.degree45-long.one{
+	transform: skew(45deg) translate(28px,0px)
+}
+#letter-e.degree45-long.two{
+	transform: skew(-45deg) translate(103px,75px)
+}
+#letter-e.across.two{
+	transform: translate(0px,140px)
+}
+
+/*LETTER F*/
+.letter.letter-f{
+	width:90px !important;
+}
+#letter-f.stem{
+	height:110px !important;
+	transform: translate(37px,40px);
+}
+#letter-f.degree45-long{
+	transform: skew(-45deg) translate(-40px,-40px);
+}
+#letter-f.degree45-short{
+	transform: skew(-45deg) translate(16px,-3px);
+}
+
+/*LETTER G*/
+.letter.letter-g{
+	width:170px !important;
+}
+#letterG{
+	transform: translate(2px,0px);
+}
+#letter-g.degree45-long.one{
+	transform: skew(-45deg) translate(35px,0px);
+}
+#letter-g.degree45-long.two{
+	transform: skew(45deg) translate(-40px,75px);
+}
+#letter-g.degree45-long.three{
+	transform: skew(-45deg) translate(190px,75px);
+}
+#letter-g.across{
+	transform: translate(78px,75px);
+}
+
+
+/*LETTER H*/
+.letter.letter-h{
+	width:165px !important;
+}
+#letter-h.stem {
+	transform: translate(155px,0px);
+}
+#letter-h.degree45-long.one {
+	transform: skew(45deg) translate(-120px,0px);
+}
+#letter-h.degree45-long.two {
+	transform: skew(-45deg) translate(-45px,75px);
+}
+#letter-h.across {
+	transform: translate(-80px,70px);
+}
+
+/*LETTER I*/
+.letter.letter-i{
+	width:10px !important;
+}
+#letter-i.stem {
+	transform: translate(0px,0px);
+}
+
+/*LETTER J*/
+.letter.letter-j{
+	width:57px !important;
+}
+#letter-j.stem {
+	transform: translate(47px,0px);
+}
+#letter-j.degree45-short {
+	transform: skew(45deg)translate(-140px,112px);
+}
+
+/*LETTER K*/
+.letter.letter-k{
+	width:93px !important;
+}
+#letter-k.stem{
+	transform:translate(0px,0px);
+}
+#letter-k.degree45-long.one{
+	transform: skew(45deg) translate(-35px,75px);
+}
+#letter-k.degree45-long.two{
+	transform:skew(-45deg) translate(40px,0px);
+}
+
+/*LETTER L*/
+.letter.letter-l{
+	width:57px !important;
+}
+#letter-l.stem {
+	transform: translate(0px,0px);
+}
+#letter-l.degree45-short {
+	transform: skew(-45deg)translate(135px,112px);
+}
+
+/*LETTER M*/
+.letter.letter-m{
+	width:173px !important;
+}
+#letter-m.stem.one {
+	transform: translate(0px,0px);
+}
+#letter-m.degree45-xlong{
+	transform: skew(45deg) translate(80px,0px);
+}
+#letter-m.stem.two {
+	transform: translate(163px,0px);
+}
+#letter-m.degree45-long{
+	transform: skew(-45deg) translate(-45px,0px);
+}
+
+/*LETTER N*/
+.letter.letter-n{
+	width:173px !important;
+}
+#letter-n.stem.one {
+	transform: translate(0px,0px);
+}
+#letter-n.degree45-xlong{
+	transform: skew(45deg) translate(80px,0px);
+}
+#letter-n.stem.two {
+	transform: translate(163px,0px);
+}
+
+/*LETTER 0*/
+.letter.letter-o{
+	width:165px !important;
+}
+#letterO{
+	transform: translate(2px,0px);
+}
+#letter-o.degree45-long.one {
+	transform: skew(-45deg) translate(35px,0px);
+}
+#letter-o.degree45-long.two {
+	transform: skew(45deg) translate(110px,0px);
+}
+#letter-o.degree45-long.three {
+	transform: skew(45deg) translate(-40px,75px);
+}
+#letter-o.degree45-long.four {
+	transform: skew(-45deg) translate(185px,75px);
+}
+
+/*LETTER P*/
+ .letter.letter-p{
+	width:55px !important;
+}
+#letter-p.stem {
+	transform: translate(0px,0px);
+}
+#letter-p.degree45-short.one {
+	transform: skew(45deg) translate(20px,0px);
+}
+#letter-p.degree45-short.two {
+	transform: skew(-45deg) translate(58px,37.5px);
+}
+
+/*LETTER Q*/
+.letter.letter-q{
+	width:165px !important;
+}
+#letterQ{
+	transform: translate(2px,0px);
+}
+#letter-q.degree45-long.one {
+	transform: skew(-45deg) translate(35px,0px);
+}
+#letter-q.degree45-long.two {
+	transform: skew(45deg) translate(110px,0px);
+}
+#letter-q.degree45-long.three {
+	transform: skew(45deg) translate(-40px,75px);
+}
+#letter-q.degree45-long.four {
+	transform: skew(-45deg) translate(185px,75px);
+}
+#letter-q.degree45-long.five {
+	transform: skew(45deg) translate(40px,75px);
+}
+
+/*LETTER R*/
+.letter.letter-r{
+	width:93px !important;
+}
+#letter-r.stem {
+	transform: translate(0px,0px);
+}
+#letter-r.degree45-short.one {
+	transform: skew(45deg) translate(20px,0px);
+}
+#letter-r.degree45-short.two {
+	transform: skew(-45deg) translate(58px,37.5px);
+}
+#letter-r.degree45-long{
+	transform: skew(45deg) translate(-35px,75px);
+}
+
+/*LETTER S*/
+.letter.letter-s{
+	width:176px !important;
+}
+#letterS{
+	transform: translate(13px,0px);
+}
+#letter-s.degree45-long.one{
+	transform: skew(-45deg) translate(35px,10px);
+}
+#letter-s.degree45-long.two{
+	transform: skew(-45deg) translate(185px,75px);
+}
+#letter-s.across{
+	width:150px !important;
+	transform: translate(0px,75px);
+}
+
+/*LETTER T*/
+.letter.letter-t{
+	width:90px !important;
+}
+#letter-t.stem{
+	height:110px !important;
+	transform: translate(37px,40px);
+}
+#letter-t.degree45-long{
+	transform: skew(-45deg) translate(-40px,-40px);
+}
+
+/*LETTER U*/
+.letter.letter-u{
+	width:165px !important;
+}
+#letterU{
+	transform:translate(2px,0px);
+}
+#letter-u.degree45-long.one {
+	transform: skew(45deg) translate(-40px,75px);
+}
+#letter-u.degree45-long.two {
+	transform: skew(-45deg) translate(185px,75px);
+}
+#letter-u.degree45-long.four {
+	transform: skew(45deg) translate(110px,0px);
+}
+
+/*LETTER V*/
+.letter.letter-v{
+	width:165px !important;
+}
+#letter-v.stem{
+	transform: translate(155px,0px);
+}
+#letter-v.degree45-xlong{
+	transform:skew(45deg)translate(-80px,0px);
+}
+
+/*LETTER W*/
+.letter.letter-w{
+	width:173px !important;
+}
+#letter-w.stem.one {
+	transform: translate(0px,0px);
+}
+#letter-w.degree45-xlong{
+	transform: skew(-45deg) translate(80px,0px);
+}
+#letter-w.stem.two {
+	transform: translate(163px,0px);
+}
+#letter-w.degree45-long{
+	transform: skew(45deg) translate(-120px,75px);
+}
+
+/*LETTER X*/
+.letter.letter-x{
+	width:165px !important;
+}
+#letterX{
+	transform: translate(75px,0px);
+}
+#letter-x.degree45-xlong.one{
+	transform: skew(-45deg) translate(0px,0px);
+}
+#letter-x.degree45-xlong.two{
+	transform: skew(45deg) translate(0px,0px);
+}
+
+/*LETTER Y*/
+.letter.letter-y{
+	width:93px !important;
+}
+#letter-y.stem{
+	transform: translate(83px,0px);
+}
+#letter-y.degree45-long{
+	transform: skew(45deg) translate(-45px,0px);
+}
+
+/*LETTER Z*/
+.letter.letter-z{
+	width:176px !important;
+}
+#letterZ{
+	transform: translate(13px,0px);
+}
+#letter-z.degree45-long.one{
+	transform: skew(45deg) translate(100px,10px);
+}
+#letter-z.degree45-long.two{
+	transform: skew(45deg) translate(-50px,75px);
+}
+#letter-z.across{
+	width:150px !important;
+	transform: translate(0px,75px);
+}
+
+/*NUMBER 1*/
+.letter.letter-1{
+	width:165px !important;
+}
+#letter-1.acrossNum{
+	width:70px !important;
+	transform: translate(85px,0px);
+}
+#letter-1.degree45-xlong{
+	transform: skew(-45deg) translate(-10px,0px);
+}
+
+/*NUMBER 2*/
+.letter.letter-2{
+	width:165px !important;
+}
+#letter-2.acrossNum.one{
+	transform: translate(10px,0px);
+}
+#letter-2.degree45-xlong{
+	transform: skew(-45deg) translate(65px,0px);
+}
+#letter-2.acrossNum.two{
+	transform: translate(0px,140px);
+}
+
+/*NUMBER 3*/
+.letter.letter-3{
+	width:150px !important;
+}
+#letter-3.acrossNum.one{
+	transform:translate(0px,0px);
+}
+#letter-3.degree45-long.one{
+	transform: skew(-45deg) translate(97px,0px)
+}
+#letter-3.degree45-long.two{
+	transform: skew(45deg) translate(22px,75px)
+}
+#letter-3.acrossNum.two{
+	transform: translate(0px,140px)
+}
+
+/*NUMBER 4*/
+.letter.letter-4{
+	width:165px !important;
+}
+#letter-4.acrossNum{
+	transform: translate(10px,0px);
+}
+#letter-4.degree45-xlong.one{
+	transform: skew(-45deg) translate(65px,0px);
+}
+#letter-4.degree45-xlong.two{
+	height:112.5px !important;
+	transform: skew(45deg) translate(45px,0px);
+}
+
+/*NUMBER 5*/
+.letter.letter-5{
+	width:165px !important;
+}
+#letter-5.acrossNum.one{
+	transform: translate(10px,0px);
+}
+#letter-5.degree45-xlong{
+	transform: skew(45deg) translate(65px,0px);
+}
+#letter-5.acrossNum.two{
+	transform: translate(0px,140px);
+}
+
+/*NUMBER 6*/
+/*#letter-6.acrossNum.one{
+	transform: translate(25px,0px);
+}
+#letter-6.degree45-long{
+	transform: skew(-45deg) translate(103px,75px);
+}
+#letter-6.degree45-xlong{
+	transform: skew(45deg) translate(65px,0px);
+}
+#letter-6.acrossNum.two{
+	transform: translate(0px,140px);
+}*/
+.letter.letter-6{
+	width:165px !important;
+}
+#letter-6.acrossNum{
+	transform: translate(10px,140px);
+}
+#letter-6.degree45-long{
+	transform: skew(45deg) translate(167px,-65px);
+}
+#letter-6.degree45-xlong{
+	transform: skew(-45deg) translate(-75px,-140px);
+}
+
+/*NUMBER 7*/
+.letter.letter-7{
+	width:165px !important;
+}
+#letter-7.acrossNum{
+	transform: translate(10px,0px);
+}
+#letter-7.degree45-xlong{
+	transform: skew(-45deg) translate(65px,0px);
+}
+#letter-7.degree45-long{
+	transform: skew(45deg) translate(27.5px,37px);
+}
+
+/*NUMBER 8*/
+.letter.letter-8{
+	width:165px !important;
+}
+#letter-8.acrossNum.one{
+	transform: translate(10px,0px);
+}
+#letter-8.degree45-xlong.one{
+	transform: skew(-45deg) translate(65px,0px);
+}
+#letter-8.degree45-xlong.two{
+	transform: skew(45deg) translate(65px,0px);
+}
+#letter-8.acrossNum.two{
+	transform: translate(0px,140px);
+}
+
+/*NUMBER 9*/
+.letter.letter-9{
+	width:165px !important;
+}
+#letter-9.acrossNum{
+	transform: translate(10px,0px);
+}
+#letter-9.degree45-xlong{
+	transform: skew(-45deg) translate(65px,0px);
+}
+#letter-9.degree45-long{
+	transform: skew(45deg) translate(28px,0px);
+}
+
+/*NUMBER 0*/
+.letter.letter-0{
+	width:165px !important;
+}
+#letter0{
+	transform: translate(2px,0px);
+}
+#letter-0.degree45-long.one {
+	transform: skew(-45deg) translate(35px,0px);
+}
+#letter-0.degree45-long.two {
+	transform: skew(45deg) translate(110px,0px);
+}
+#letter-0.degree45-long.three {
+	transform: skew(45deg) translate(-40px,75px);
+}
+#letter-0.degree45-long.four {
+	transform: skew(-45deg) translate(185px,75px);
+}
+#letter-0.acrossNum{
+	transform: translate(10px,70px);
+}
