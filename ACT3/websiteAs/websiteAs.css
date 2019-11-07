@@ -1,0 +1,49 @@
+body{
+	width:100%;
+	height:100%;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+h1{
+	font-size: 2.5em;
+	font-family: 'Fugaz One', cursive;
+}
+p{
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+}
+.top{
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+}
+
+.grid{
+	position: absolute;
+	display: inline-grid;
+	width: 100%; 
+	height: 100%;
+
+	grid-template-rows: repeat(6,1fr);
+	grid-template-columns: repeat(3,1fr);
+}
+
+.textBox{
+	padding:20px;
+
+	grid-column-start:2;
+	grid-column-end: 1 span;
+}
+.textBox.one{
+	color: white;
+	grid-row-start: 2;
+	grid-row-end: 1 span;
+}
+.textBox.two{
+	background-color: rgb(255,255,255,0.75);
+
+	grid-row-start: 3;
+	grid-row-end: 1 span;
+}
