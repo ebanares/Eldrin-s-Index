@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The World's Most Common Pets</title>
+		<!-- Leaflet CSS -->
+		  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   			integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   			crossorigin=""/>
+		<!-- Leaflet Javascript -->
+		  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   			integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   			crossorigin=""></script>
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- jQuery UI -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<!-- local css -->
+		<link rel="stylesheet" href="../pets.css">
+		<!-- character set -->
+		<meta charset="UTF-8">
+	</head>
+	<body id="main">
+		<div class="container">
+			<div class="navBar cat">
+				<a rel="next" href="../titleScreen.html" style="margin:0px; font-weight:700;font-size:1.25em;">The World's Most Common Pets</a>
+			</div>
+			<div class="leftTab">
+				<h4>Top 20 Cat Populations</h4>
+				<div class="ruleMain cat"></div>
+				<ol>	
+					<li>
+						<h5>United States</h5>
+						<p class="body">74,059,000</p>
+					</li>
+					<li>
+						<h5>China</h5>
+						<p class="body">53,100,000</p>
+					</li>
+					<li>
+						<h5>Russia</h5>
+						<p class="body">17,800,000</p>
+					</li>
+					<li>
+						<h5>Brazil</h5>
+						<p class="body">12,466,000</p>
+					</li>
+					<li>
+						<h5>France</h5>
+						<p class="body">11,480,000</p>
+					</li>
+					<li>
+						<h5>Germany</h5>
+						<p class="body">8,200,000</p>
+					</li>
+					<li>
+						<h5>UK</h5>
+						<p class="body">8,000,000</p>
+					</li>
+					<li>
+						<h5>Italy</h5>
+						<p class="body">7,400,000</p>
+					</li>
+					<li>
+						<h5>Ukraine</h5>
+						<p class="body">7,350,000</p>
+					</li>
+					<li>
+						<h5>Japan</h5>
+						<p class="body">7,300,000</p>
+					</li>
+					<li>
+						<h5>Poland</h5>
+						<p class="body">5,550,000</p>
+					</li>
+					<li>
+						<h5>Romania</h5>
+						<p class="body">3,891,000</p>
+					</li>
+					<li>
+						<h5>Spain</h5>
+						<p class="body">3,385,000</p>
+					</li>
+					<li>
+						<h5>Argentina</h5>
+						<p class="body">3,000,000</p>
+					</li>
+					<li>
+						<h5>Netherlands</h5>
+						<p class="body">2,877,000</p>
+					</li>
+					<li>
+						<h5>Hungary</h5>
+						<p class="body">2,240,000</p>
+					</li>
+					<li>
+						<h5>Australia</h5>
+						<p class="body">2,200,000</p>
+					</li>
+					<li>
+						<h5>South Africa</h5>
+						<p class="body">2,000,000</p>
+					</li>
+					<li>
+						<h5>Belgium</h5>
+						<p class="body">1,884,100</p>
+					</li>
+					<li>
+						<h5>Czech Republic</h5>
+						<p class="body">1,750,000</p>
+					</li>
+				</ol>
+			</div>
+			<div class="credits">
+				<div class="ruleMain cat" style="margin:0px;"></div>
+				<p style="font-size:11px; margin:0px;">List Data <a rel="external" href="https://www.petsecure.com.au/pet-care/a-guide-to-worldwide-pet-ownership/" target="_blank">PetSecure.com.au</a></p>
+				<p style="font-size:9px; margin:0px;">Developed and designed by Eldrin Banares</p>
+			</div>
+			<div class="map" id="catid">
+			</div>
+			<!-- local javascript, it needs to be after "id='mapid'" -->
+			<script src="cats.js"></script>
+			</div>
+
+	</body>
+</html>
