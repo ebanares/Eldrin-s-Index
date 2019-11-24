@@ -1,0 +1,12 @@
+body{
+	background-image:url("ocean.jpg");
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+.fish{
+	position: absolute;
+	height:auto;
+	width:200px;
+	transition: 1000ms;
+}

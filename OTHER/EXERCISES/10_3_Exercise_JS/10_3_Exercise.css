@@ -1,0 +1,17 @@
+body{
+	padding: 100px;
+}
+
+.red-box{
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	transition: 500ms;
+}
+
+.red-box:hover{
+	width: 500px;
+	height: 500px;
+	background-color: blue;
+
+}

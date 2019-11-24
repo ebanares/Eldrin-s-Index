@@ -1,0 +1,48 @@
+body{
+	margin:0px;
+	font-family: helvetica, arial, sans-serif;
+}
+
+.grid{
+	display:grid;
+
+	/*vw is the viewport WIDTH and vh is the viewport HEIGHT*/
+	width: 100vw; 
+	height: 100vh;
+
+	/*fr are fractions. refers to the space available*/
+	/*grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;*/
+
+	/*repeat(how many times, what you want to repeat)*/
+	grid-template-rows: repeat(3,1fr);
+	grid-template-columns: repeat(4,1fr);
+
+	/*margins!!!!*/
+	grid-row-gap: 20px;
+	grid-column-gap: 20px;
+}
+.red-box{
+	background:red;
+	/*dictates where this class would start in the grid and end*/
+	grid-column-start:1;
+	grid-column-end: 3 span; /*span is important; without it it wouldnt go through the entire thing*/
+}
+.green-box{
+	background:green;
+	/*dictates where this class would start in the grid and end*/
+	grid-column-start:1;
+	grid-column-end: 3 span; /*span is important; without it it wouldnt go through the entire thing*/
+
+	grid-row-start: 2;
+	grid-row-end: 2 span;
+}
+.blue-box{
+	background:blue;
+	/*dictates where this class would start in the grid and end*/
+	grid-column-start:4;
+	grid-column-end: 1 span; /*span is important; without it it wouldnt go through the entire thing*/
+
+	grid-row-start: 1;
+	grid-row-end: 3 span;
+}
