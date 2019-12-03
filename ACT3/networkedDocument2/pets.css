@@ -1,12 +1,14 @@
 body#title{
-	/*background-image: url(resources/waves2.gif);
-	background-repeat: no-repeat;
-	background-size: cover;*/
-	background-position: center;
 	font-family: 'Work Sans', Arial, sans-serif;
-	color:white;
-	background-color: #777;
+	color:#b35c00;
+	/*background-color: #777;*/
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url('final_resources/bg-05.jpg');
 }
+
 
 h1#title{
 	font-weight: 700;
@@ -18,7 +20,7 @@ h1#title{
 
 .rule{
 	display: inline-block;
-	border: 2px solid white;
+	border: 2px solid #b35c00;
 	width:50%;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -47,14 +49,13 @@ a#title:hover {
 }
 a#options{
 	font-family: 'Gochi Hand', cursive;
-	color:white;
+	color:#b35c00;
 	font-size: 1.5em;
 	font-weight: 700;
 	margin-right: 40px;
 	margin-left: 40px;
 }
 a#options:hover {
-	color:black;
 	transition-duration: 0.5s;
 }
 
