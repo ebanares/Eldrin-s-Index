@@ -2,47 +2,59 @@
 <html>
 	<head>
 		<title>Eldrin's Index</title>
+		<!-- local stylesheet -->
 		<link rel="stylesheet" href="Main-Index.css">
+		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans&display=swap" rel="stylesheet">
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- jQuery UI -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<!-- local script -->
+		<script src="index.js"></script>
 	</head>
-	<body>
-		<h1>Eldrin's Index</h1>
-		<div class="rule"></div>
+	<body id="title">
+		<div class="header">
+			<h1 style="padding-left:100px;">Eldrin's Index</h1>
+			<div class="progress-container">
+    			<div class="progress-bar" id="myBar"></div>
+  			</div>
+		</div>
 		<!--ALl these tabls will link to a separate menu page dedicated to links to their respective projects-->
 		<div class="gridSpan" style="grid-template-rows: repeat(4,100px)">
 			<h2>ACT ONE</h2>
-				<a rel="next" href="ACT1/EldrinB_CSSTypeface/EldrinB_CSSTypeface.html">Part 1: CSS Typeface</a>
-				<a rel="next" href="ACT1/EldrinB_WebTypePoster/Typographic_Poster_MAIN_V2.html">Part 2: Web Typographic Poster</a>
-				<a rel="next" href="ACT1/Reading-Responses.html">Reading Response 1: Turing Complete User</a>
-				<a rel="next" href="ACT1/Tableau/Tableaus.html">Tableau</a>
+				<a class="main" rel="next" href="ACT1/EldrinB_CSSTypeface/EldrinB_CSSTypeface.html">Part 1: CSS Typeface</a>
+				<a class="main" rel="next" href="ACT1/EldrinB_WebTypePoster/Typographic_Poster_MAIN_V2.html">Part 2: Web Typographic Poster</a>
+				<a class="main" rel="next" href="ACT1/Reading-Responses.html">Reading Response 1: Turing Complete User</a>
+				<a class="main" rel="next" href="ACT1/Tableau/Tableaus.html">Tableau</a>
 			</div>
 
 		<div class="rule"></div>
 		<div class="gridSpan" style="grid-template-rows: repeat(2,100px)">
 			<h2>ACT TWO</h2>
-				<a rel="next" href="ACT2/EldrinB_WebVerbs/webVerbs.html">Web Verbs: Hover</a>
-				<a rel="next" href="ACT2/readingResponse2.html">Reading Response 2: The Poetry of Tools</a>
+				<a class="main" rel="next" href="ACT2/EldrinB_WebVerbs/webVerbs.html">Web Verbs: Hover</a>
+				<a class="main" rel="next" href="ACT2/readingResponse2.html">Reading Response 2: The Poetry of Tools</a>
 		</div>
 
 		<div class="rule"></div>
 		<div class="gridSpan" style="grid-template-rows: repeat(2,100px)">
 			<h2>ACT THREE</h2>
-				<a rel="next" href="ACT3/networkedDocument2/titleScreen.html">Networked Document: The World's Most Common Pets</a>
-				<a rel="next" href="ACT3/readingResponse3.html">Reading Response 3: My Website is a Shifting House Next to a River of Knowledge</a>
+				<a class="main" rel="next" href="ACT3/networkedDocument2/titleScreen.html">Networked Document: The World's Most Common Pets</a>
+				<a class="main" rel="next" href="ACT3/readingResponse3.html">Reading Response 3: My Website is a Shifting House Next to a River of Knowledge</a>
 		</div>
 
 		<div class="rule"></div>
 		<div class="gridSpan" style="grid-template-rows: repeat(9,100px)">
 			<h2>OTHER</h2>
-				<a rel="next" href="OTHER/networkedDocument1/titleScreen.html">Scrapped! Networked Document</a>
-				<a rel="next" href="OTHER/EXERCISES/9_12 Exercise_DIV/9_12_Exercise.html">09/12/19 Exercise: DIVs</a>
-				<a rel="next" href="OTHER/EXERCISES/9_19_Exercise_TEXT/9_19_Exercise.html">09/19/19 Exercise: Text Study</a>
-				<a rel="next" href="OTHER/EXERCISES/9_26_Exercise_GRID/9_26_Exercise.html">09/26/19 Exercise: Grids</a> 
-				<a rel="next" href="OTHER/EXERCISES/10_3_Exercise_JS/10_3_Exercise.html">10/03/19 Exercise: Javascript</a> 
-				<a rel="next" href="OTHER/EXERCISES/10_10_Exercise_jQUERY/10_10_Exercise.html">10/10/19 Exercise: jQuery Study</a> 
-				<a rel="next" href="OTHER/EXERCISES/10_31_Exercise_LOOPS/10_31_Exercise.html">10/31/19 Exercise: Aquarium</a>
-				<a rel="next" href="OTHER/EXERCISES/11_14_Exercise_P5/11_14_Exercise.html">11/14/19 Exercise: Flower Garden</a> 
-				<a rel="next" href="OTHER/EXERCISES/11_21_Exercise_API/11_21_Exercise.html">11/21/19 Exercise: Weather App</a>
+				<a class="main" rel="next" href="OTHER/networkedDocument1/titleScreen.html">Scrapped! Networked Document</a>
+				<a class="main" rel="next" href="OTHER/EXERCISES/9_12 Exercise_DIV/9_12_Exercise.html">09/12/19 Exercise: DIVs</a>
+				<a class="main" rel="next" href="OTHER/EXERCISES/9_19_Exercise_TEXT/9_19_Exercise.html">09/19/19 Exercise: Text Study</a>
+				<a class="main" rel="next" href="OTHER/EXERCISES/9_26_Exercise_GRID/9_26_Exercise.html">09/26/19 Exercise: Grids</a> 
+				<a class="main" rel="next" href="OTHER/EXERCISES/10_3_Exercise_JS/10_3_Exercise.html">10/03/19 Exercise: Javascript</a> 
+				<a class="main" rel="next" href="OTHER/EXERCISES/10_10_Exercise_jQUERY/10_10_Exercise.html">10/10/19 Exercise: jQuery Study</a> 
+				<a class="main" rel="next" href="OTHER/EXERCISES/10_31_Exercise_LOOPS/10_31_Exercise.html">10/31/19 Exercise: Aquarium</a>
+				<a class="main" rel="next" href="OTHER/EXERCISES/11_14_Exercise_P5/11_14_Exercise.html">11/14/19 Exercise: Flower Garden</a> 
+				<a class="main" rel="next" href="OTHER/EXERCISES/11_21_Exercise_API/11_21_Exercise.html">11/21/19 Exercise: Weather App</a>
 		</div>
 	</body>
 </html>
